@@ -35,9 +35,9 @@ describe "MP3Importer" do
       Artist.class_variable_set("@@all",[])
       test_music_path = "./spec/fixtures/mp3s"
       music_importer = MP3Importer.new(test_music_path)
-      binding.pry
+      # binding.pry
       music_importer.import
-      binding.pry
+      # binding.pry
 
       expect(Artist.all.size).to eq(3)
       expect(Artist.all.first.songs.empty? && Artist.all.last.songs.empty?).to eq(false)

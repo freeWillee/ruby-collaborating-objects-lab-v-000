@@ -28,7 +28,7 @@ class MP3Importer
       Song.new_by_filename(filename)
     end
     Artist.all
-    binding.pry
+    # binding.pry
   end
 
 end

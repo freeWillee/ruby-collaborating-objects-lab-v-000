@@ -30,8 +30,8 @@ class Artist
 
       artist.name == name
     end
-    
-binding.pry
+
+# binding.pry
 
     if artist.nil?
       artist = Artist.new(name)

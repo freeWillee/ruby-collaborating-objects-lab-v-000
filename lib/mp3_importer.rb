@@ -22,6 +22,7 @@ class MP3Importer
   end
 
   def import
+    @@all = []
     import_array = self.files
     import_array.each do |filename|
       # binding.pry
